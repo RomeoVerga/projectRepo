@@ -31,7 +31,7 @@ public class Queue {
 		if(fullQ)
 		{
 			out = new int[MAX_SIZE];
-			System.arraycopy(queueX, 0, out, 0, MAX_SIZE);
+			System.arraycopy(queueX, 0, out, 0, MAX_SIZE);	//deep copy
 		}
 		
 		return out;
@@ -44,7 +44,7 @@ public class Queue {
 		if(fullQ)
 		{
 			out = new int[MAX_SIZE];
-			System.arraycopy(queueY, 0, out, 0, MAX_SIZE);
+			System.arraycopy(queueY, 0, out, 0, MAX_SIZE);	//deep copy
 		}
 		
 		return out;
