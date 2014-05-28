@@ -176,13 +176,13 @@ public class CircleXOGrid {
 		for(int i = 0 ; (y+i) < MAX_FIELD_WIDTH && field[((x+i)%MAX_FIELD_LENGTH)][y+i] == currPlyr; i++)
 		{
 			count++;
-			queue.add(((x+i)%MAX_FIELD_LENGTH), y+1);
+			queue.add(((x+i)%MAX_FIELD_LENGTH), y+i);
 		}
 		
 		for(int i = -1 ; (y+i) >= 0 && field[Math.abs((x+i)%MAX_FIELD_LENGTH)][y+i] == currPlyr; i--)
 		{
 			count++;
-			queue.add(Math.abs((x+i)%MAX_FIELD_LENGTH), y+1);
+			queue.add(Math.abs((x+i)%MAX_FIELD_LENGTH), y+i);
 		}
 		
 		return count;
@@ -196,13 +196,13 @@ public class CircleXOGrid {
 		for(int i = 0 ; (y+i) < MAX_FIELD_WIDTH && field[Math.abs((x-i)%MAX_FIELD_LENGTH)][y+i] == currPlyr; i++)
 		{
 			count++;
-			queue.add(Math.abs((x-i)%MAX_FIELD_LENGTH), y+1);
+			queue.add(Math.abs((x-i)%MAX_FIELD_LENGTH), y+i);
 		}
 		
 		for(int i = -1 ; (y+i) >= 0 && field[(x-i)%MAX_FIELD_LENGTH][y+i] == currPlyr; i--)
 		{
 			count++;
-			queue.add((x-i)%MAX_FIELD_LENGTH, y+1);
+			queue.add((x-i)%MAX_FIELD_LENGTH, y+i);
 		}
 		
 		
