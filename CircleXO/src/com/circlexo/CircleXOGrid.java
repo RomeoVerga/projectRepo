@@ -112,7 +112,7 @@ public class CircleXOGrid {
 			else						currPlyr = X_PLAYER;
 			
 			validMove = true;
-			System.out.println(this.toString() + "\n");
+			//System.out.println(this.toString() + "\n");
 		}
 		
 		return validMove;
