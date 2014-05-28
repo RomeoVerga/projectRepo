@@ -69,7 +69,7 @@ public class CircleXOGrid {
 	
 	public char getWinner()		{return winner;}
 	
-	public int[] getXList()		// implement throw exceptions *****TODO*****
+	public int[] getXList()		// TODO: implement throw exceptions
 	{
 		int[] out = null;
 		
@@ -81,7 +81,7 @@ public class CircleXOGrid {
 		return out;
 	}
 	
-	public int[] getYList()		// implement throw exceptions *****TODO*****
+	public int[] getYList()		// TODO: implement throw exceptions 
 	{
 		int[] out = null;
 		

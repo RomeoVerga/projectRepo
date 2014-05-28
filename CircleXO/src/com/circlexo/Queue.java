@@ -24,7 +24,7 @@ public class Queue {
 		front = (front+1)%MAX_SIZE;		//front must be reset to 0; to prevent overflow from clicking
 	}
 	
-	public int[] getXList()		//throw Exceptions must be implemented *****TODO*****
+	public int[] getXList()		// TODO: throw Exceptions must be implemented
 	{
 		int[] out = null;
 		
@@ -37,7 +37,7 @@ public class Queue {
 		return out;
 	}
 	
-	public int[] getYList()		//throw Exceptions must be implemented *****TODO*****
+	public int[] getYList()		// TODO: throw Exceptions must be implemented
 	{
 		int[] out = null;
 		
