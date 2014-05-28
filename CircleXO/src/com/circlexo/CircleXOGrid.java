@@ -162,7 +162,7 @@ public class CircleXOGrid {
 		for(int i = -1; i >= -3 && field[Math.abs((x+i+8)%MAX_FIELD_LENGTH)][y] == currPlyr; i--)
 		{
 			count++;
-			queue.add(Math.abs((x+i)%MAX_FIELD_LENGTH), y);
+			queue.add(Math.abs((x+i+8)%MAX_FIELD_LENGTH), y);
 		}
 		
 		
