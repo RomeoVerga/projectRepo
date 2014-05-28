@@ -112,6 +112,7 @@ public class CircleXOGrid {
 			else						currPlyr = X_PLAYER;
 			
 			validMove = true;
+			System.out.println(this.toString() + "\n");
 		}
 		
 		return validMove;
@@ -158,7 +159,7 @@ public class CircleXOGrid {
 			queue.add((x+i)%MAX_FIELD_LENGTH, y);
 		}
 			
-		for(int i = -1; i >= -3 && field[Math.abs((x+i)%MAX_FIELD_LENGTH)][y] == currPlyr; i--)
+		for(int i = -1; i >= -3 && field[Math.abs((x+i+8)%MAX_FIELD_LENGTH)][y] == currPlyr; i--)
 		{
 			count++;
 			queue.add(Math.abs((x+i)%MAX_FIELD_LENGTH), y);
