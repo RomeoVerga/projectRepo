@@ -210,15 +210,22 @@ public class MainWindow {
 	
 	public void play(int x,int y)
 	{
+		int[] winX = null;
+		int[] winY = null;
+		
 		if(game.playPos(x, y)){btnArray[x][y].setText("" + game.getPrevPlyr());}
 		
 		if(game.getWinner() != game.EMPTY)
 		{
+			winX = game.getXList();
+			winY = game.getYList();
+			
 			for(int j = 0 ; j < game.MAX_FIELD_WIDTH; j++)
 			{
 				for(int i = 0; i < game.MAX_FIELD_LENGTH; i++)
 				{
-					btnArray[i][j].setEnabled(false);
+					if(!((i == winX[0] && j == winY[0]) || (i == winX[1] &&  j == winY[1]) || (i == winX[2] && j == winY[2]) || (i == winX[3] && j == winY[3])))
+						btnArray[i][j].setEnabled(false);
 				}
 			}
 			
