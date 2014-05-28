@@ -49,4 +49,21 @@ public class Queue {
 		
 		return out;
 	}
+	
+	public boolean isFull() {return fullQ;}
+	
+	public String toString()
+	{
+		String out = "";
+		
+		if(fullQ)
+			for(int i = 0; i < MAX_SIZE; i++)
+			{
+				out += "(" + queueX[i] + "," + queueY[i] + ") ";
+			}
+		
+		out += "\n";
+		
+		return out;
+	}
 }

@@ -224,7 +224,9 @@ public class CircleXOGrid {
 			out += "\n";
 		}
 		
-		if(winner != EMPTY) out += "WINNER IS" + winner + "\n";
+		if(queue.isFull())	out += "" + queue.toString();
+		
+		if(winner != EMPTY) out += "WINNER IS " + winner + "\n";
 		
 		return out;
 	}
